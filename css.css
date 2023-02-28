@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.todo-block{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    background: grey;
+    row-gap: 20px;
+    border-radius: 10px;
+}
+.btn-done{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.form{
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    background: grey;
+}
+.text{
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 70%;
+    height: 100%;
+}
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-delete{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn-imp{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+.todo__btn{
+    display: flex;
+    column-gap: 20px;
+}
+.statusBtn{
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+}
+.todo-date{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    column-gap: 20px;
+}
+.todo-date-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px
+}
+.title{
+    font-family: sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 55px;
+}
+.day{
+    font-family: sans-serif;
+    font-size: 70px;
+}
+.month{
+     font-family: sans-serif;
+    font-size: 25px;
+}
+.year{
+     font-family: sans-serif;
+    font-size: 20px;
+}
+.weekDay{
+    font-family: sans-serif;
+    font-size: 23px;
+    color: white;
+}
+.block-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.time-btns{
+    display: none;
+}
+.div-btn{
+    display: flex;
+    column-gap: 10px;
+}
+.list-undefined{
+    display: block;
+    color: white;
+}

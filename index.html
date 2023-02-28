@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+<body id="body">
+
+<div style="width: 600px;">
+    <h1 class="title">TODO</h1>
+    <div class="block-flex">
+        <div class="todo-date">
+            <span class="day"></span>
+            <div class="todo-date-block">
+                <span class="month"></span>
+                <span class="year"></span>
+            </div>
+        </div>
+        <p class="weekDay"></p>
+</div>
+
+</div>
+<form class="form">
+    <input type="text" maxlength="35" minlength="4" required class="text" placeholder="Введите название своей задачи...">
+    <button type="submit" class="button">Добавить задачу</button>
+</form>
+
+<div class="todo-block">
+
+    <ul class="list">
+
+    </ul>
+    <p class="list-undefined">Ваш список пустой</p>
+
+    <div class="todo__btn">
+        <button class="statusBtn all">All</button>
+        <button class="statusBtn imp">Important</button>
+        <button class="statusBtn done">Done</button>
+    </div>
+
+    <input class="time" type="datetime-local">
+    <div class="time-btns">
+        <button class="btn-before">Получить до</button>
+        <button class="btn-after">Получить после</button>
+    </div>
+    
+</div>
+
+<script src="./vanta/three.r119.min.js"></script>
+<script src="./vanta/vanta.net.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
