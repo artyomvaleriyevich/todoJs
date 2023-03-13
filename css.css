@@ -126,9 +126,6 @@
     display: flex;
     justify-content: space-between;
 }
-.time-btns{
-    display: none;
-}
 .div-btn{
     display: flex;
     column-gap: 10px;

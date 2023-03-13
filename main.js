@@ -12,10 +12,6 @@ let month = document.querySelector('.month')
 let year = document.querySelector('.year')
 let weekDay = document.querySelector('.weekDay')
 
-let timeBtn = document.querySelector('.time-btns')
-let btnBefore =document.querySelector('.btn-before')
-let btnAfter =document.querySelector('.btn-after')
-let inputTime = document.querySelector('.time')
 
 let now = new Date()
 
@@ -106,10 +102,10 @@ const addList = (status = '', time = ' ') => {
         li.prepend(date)
         li.append(div)
         list.append(li)
-
+        document.querySelector('.list').childNodes.length ? document.querySelector('.list-undefined').style.display = 'none' : document.querySelector('.list-undefined').style.display = 'block'
     })
 }
-addList()
+
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault() // чтобы убрать обновление страницы
@@ -123,7 +119,10 @@ form.addEventListener('submit',(e)=>{
     e.target[0].value = ''
     list.textContent = ''
     addList()
+
 })
+
+
 
 let all = document.querySelector('.all')
 let imp = document.querySelector('.imp')
@@ -161,7 +160,4 @@ VANTA.NET({
     spacing: 18.00
 })
 
-inputTime.addEventListener('change',(e)=>{
-    timeBtn.style.display = 'block'
-})
-console.log(list)
+
