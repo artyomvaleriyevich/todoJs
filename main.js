@@ -102,9 +102,10 @@ const addList = (status = '', time = ' ') => {
         li.prepend(date)
         li.append(div)
         list.append(li)
-        document.querySelector('.list').childNodes.length ? document.querySelector('.list-undefined').style.display = 'none' : document.querySelector('.list-undefined').style.display = 'block'
-    })
+        document.querySelector('.list').childNodes.length  ? document.querySelector('.list-undefined').style.display = 'none' : document.querySelector('.list-undefined').style.display = 'block'
+    } )
 }
+
 
 
 form.addEventListener('submit',(e)=>{
@@ -118,8 +119,8 @@ form.addEventListener('submit',(e)=>{
     }]
     e.target[0].value = ''
     list.textContent = ''
+    document.querySelector('.list').childNodes.length > 0 ? document.querySelector('.list-undefined').style.display = 'block' : document.querySelector('.list-undefined').style.display = 'none'
     addList()
-
 })
 
 
